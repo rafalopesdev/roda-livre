@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --first-color: #112137;
+  --second-color: #00c866;
+}
+h1,
+h2 {
+  color: var(--first-color);
+}
+
+html,
+ul,
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+.bg-color-blue {
+  background: var(--first-color);
+}
+.bg-color-green {
+  background: var(--second-color);
+}
+.color-green {
+  color: var(--second-color);
+}
+.container-center {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.bg-green-op {
+  background: #f1f1f1;
+}
+
+.second-title {
+  font-size: 1.25rem;
+  text-align: center;
+}
+.input-data input {
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.input-data input:focus {
+  outline: #112137 2px solid;
+}
+
+.info-search {
+  display: none;
+}
+#familia,
+#casamento,
+#esporte,
+#luxo {
+  accent-color: var(--first-color);
+  margin-right: 8px;
+}
+
+.container-items {
+  background: black;
+  position: relative;
+  overflow: hidden;
+}
+.item-text {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+  color: rgba(0, 0, 0, 0);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+.item-text:hover {
+  transition: 0.3s ease;
+  background: rgba(0, 0, 0, 0.7);
+  color: var(--second-color);
+}
+
+.btn-green {
+  background: var(--second-color);
+  border-radius: 5px;
+}
+.btn-search {
+  max-width: 100%;
+  height: 47px;
+  border-radius: 5px;
+  background: var(--first-color);
+  transition: 0.3s;
+}
+.btn-search:hover {
+  background: rgba(17, 33, 55, 0.8);
+}
+
+.container-login {
+  position: relative;
+  z-index: 10;
+  transition: 0.5s;
+  display: none;
+}
+.container-login.ativo {
+  display: block;
+}
+.container-form {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 10px;
+  position: absolute;
+  background: var(--first-color);
+  right: 0;
+}
+.container-form input {
+  padding: 10px 15px;
+  outline: 1px solid gray;
+  color: black;
+  border-radius: 3px;
+}
+.btn-login {
+  background: var(--second-color);
+  color: black;
+  padding: 10px;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+.btn-login:hover {
+  background: rgba(0, 200, 102, 0.7);
+}
+.container-parallax {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.title {
+  width: 100%;
+  height: 300px;
+  color: var(--second-color);
+  position: absolute;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+.parallax-familia {
+  background-image: url('./images/banner-familia.png');
+}
+.parallax-casamento {
+  background-image: url('./images/banner-casamento.png');
+}
+.parallax-esporte {
+  background-image: url('./images/banner-esporte.png');
+}
+.parallax-luxo {
+  background-image: url('./images/banner-luxo.png');
+}
+.parallax {
+  height: 250px;
+  width: 100%;
+  overflow: hidden;
+  background-attachment: fixed;
+  object-fit: cover;
+  background-position: 50% 50%;
+  opacity: 0.3;
+  filter: grayscale(100%);
+}
